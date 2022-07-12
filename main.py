@@ -1,4 +1,7 @@
 import argparse
+from dotenv import load_dotenv
+
+load_dotenv()
 
 parser = argparse.ArgumentParser(
     description='Tool to gather and post memes to instagram.')
