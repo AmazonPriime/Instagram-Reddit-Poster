@@ -159,6 +159,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-.env/
-.Instagram_Auto_Poster/
-.Reddit_Meme_Getter/
+Instagram_Auto_Poster/
+Reddit_Meme_Getter/
