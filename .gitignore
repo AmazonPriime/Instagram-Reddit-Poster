@@ -120,7 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-#.env
+.env
 .venv
 env/
 venv/
@@ -161,3 +161,5 @@ cython_debug/
 
 Instagram_Auto_Poster/
 Reddit_Meme_Getter/
+*.json
+.env
