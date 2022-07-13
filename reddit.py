@@ -32,13 +32,13 @@ class Reddit:
         with open(fullpath, 'wb') as f:
             pickle.dump(self.reddit, f)
 
-    def get_submissions(self, subreddits, number, filter='day'):
+    def get_submissions(self, subreddits, number, used_ids=[], filter='day'):
         subreddits = '+'.join(subreddits)
         submissions_generator = self.reddit.subreddit(
             subreddits).top(limit=number, time_filter=filter)
         submissions = []
         for submission in submissions_generator:
-            if not submission.over_18:
+            if not submission.over_18 and submission.id not in used_ids:
                 submissions.append({
                     'id': submission.id,
                     'author': submission.author.name,
