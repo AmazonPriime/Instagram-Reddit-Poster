@@ -35,8 +35,8 @@ if __name__ == '__main__':
             reddit.new(
                 os.getenv('REDDIT_CID'),
                 os.getenv('REDDIT_SECRET'),
-                os.getenv('REDDIT_PASSWORD'),
                 os.getenv('REDDIT_USERNAME'),
+                os.getenv('REDDIT_PASSWORD')
             )
         submissions = reddit.get_submissions(args.subreddits, args.number)
         store_json(submissions, 'memes.json')

@@ -16,6 +16,7 @@ class Reddit:
             username=user,
             user_agent='Memescript by u/' + user
         )
+        self.save()
 
     def load(self, path='reddit.pkl'):
         fullpath = os.path.join(os.getcwd(), path)

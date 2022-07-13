@@ -163,3 +163,5 @@ Instagram_Auto_Poster/
 Reddit_Meme_Getter/
 *.json
 .env
+*.pkl
+*.pickle
