@@ -1,11 +1,20 @@
 # Instagram Reddit Meme Poster Tool
 Gathers memes from Reddit and posts them to Instagram.
 
-## Usage
+### Usage
 Clone the repository and then install all the required dependencies.
 ```bash
 pip install -r requirements.txt
 ```
+
+Update the contents of the `.env` file to reflect your account details.
+
+You can obtain the Reddit Client ID (CID) and Secret by creating a [Reddit App](https://www.reddit.com/prefs/apps).
+
+The usernames and passwords are the same that you use to login, if you experiences any issues authenticating you may need to disable 2FA. 
+
+---
+
 The available arguments for the tool are:
 
 | Argument | Description | Default |
